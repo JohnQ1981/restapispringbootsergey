@@ -1,0 +1,25 @@
+package com.appusers.photoapp.jq.service;
+
+import java.util.UUID;
+
+import org.modelmapper.ModelMapper;
+
+import com.appusers.photoapp.jq.shared.UserDto;
+import com.appusers.photoapp.jq.users.data.UserEntity;
+
+public class UsersServiceImpl implements UsersService  {
+
+	@Override
+	public UserDto createUser(UserDto userDetails) {
+		// TODO Auto-generated method stub
+		
+		userDetails.setUserId(UUID.randomUUID().toString());
+		ModelMapper modelMapper = new ModelMapper();
+		UserEntity userEntity =modelMapper.map(userDetails, UserEntity.class );
+		
+		return null;
+	}
+	
+	
+
+}

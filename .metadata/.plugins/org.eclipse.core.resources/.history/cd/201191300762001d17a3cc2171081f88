@@ -1,0 +1,5 @@
+package com.appusers.photoapp.jq.shared;
+
+public class UserDto {
+
+}

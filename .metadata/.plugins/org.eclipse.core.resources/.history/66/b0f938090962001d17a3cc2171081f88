@@ -1,0 +1,7 @@
+package com.appusers.photoapp.jq.users.data;
+
+import org.springframework.data.jpa.repository.support.CrudMethodMetadata;
+
+public interface UserRepository extends CrudMethodMetadata {
+
+}

@@ -1,0 +1,7 @@
+package com.appusers.photoapp.jq.service;
+
+public interface UsersService {
+	
+	UserDto createUser(UserDto userDetails); 
+
+}
