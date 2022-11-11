@@ -1,0 +1,5 @@
+package com.example.rest.restApis.exceptions;
+
+public class AppExceptionsHandler {
+
+}

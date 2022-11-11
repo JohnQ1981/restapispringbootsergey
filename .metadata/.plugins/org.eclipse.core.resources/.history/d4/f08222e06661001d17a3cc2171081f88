@@ -1,0 +1,5 @@
+package com.accountmanagement.jq.controllers;
+
+public class AccountManagementController {
+
+}

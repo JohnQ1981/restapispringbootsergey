@@ -1,0 +1,15 @@
+package com.example.rest.restApis.exceptions;
+
+public class UserServiceException extends RuntimeException {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 8664736136413239213L;
+
+	public UserServiceException(String message) 
+	{
+		super(message);
+	}
+
+}

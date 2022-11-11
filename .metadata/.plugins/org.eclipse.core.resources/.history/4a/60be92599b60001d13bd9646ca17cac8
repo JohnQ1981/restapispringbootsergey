@@ -1,0 +1,5 @@
+package com.appsblog.app.wsui.controller;
+
+public class UserController {
+
+}

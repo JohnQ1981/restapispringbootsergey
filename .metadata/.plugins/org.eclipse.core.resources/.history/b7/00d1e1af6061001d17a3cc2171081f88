@@ -1,0 +1,5 @@
+package com.appusers.photoapp.jq.users.ui.controllers;
+
+public class UserController {
+
+}

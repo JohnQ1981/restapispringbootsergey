@@ -1,0 +1,30 @@
+package com.example.rest.restApis.userservice.impl;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+
+import com.example.rest.restApis.model.request.UserDetailsRequestModel;
+import com.example.rest.restApis.model.response.UserRest;
+import com.example.rest.restApis.userservice.UserService;
+
+public class UserServiceImpl implements UserService{
+	Map<String, UserDetailsRequestModel> users;
+
+	@Override
+	public UserRest createUser(UserDetailsRequestModel userDetails) {
+		UserRest response = new UserRest();
+		response.setEmail(userDetails.getEmail());
+		response.setFirstName(userDetails.getFirstName());
+		response.setLastName(userDetails.getLastName());
+		
+		
+		String userId =UUID.randomUUID().toString();
+		response.setUserId(userId);
+		
+		if(users==null) users =new HashMap<>();
+		users.put(userId, userDetails);
+		return response;
+	}
+
+}

@@ -1,0 +1,2 @@
+running spring boot from bash; command is: 
+ mvn sping-boot:run -Dspring-boot.run.arguments=--spring.application.instance-id=johnq

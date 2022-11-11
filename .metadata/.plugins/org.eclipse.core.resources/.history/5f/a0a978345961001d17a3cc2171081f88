@@ -1,0 +1,10 @@
+package com.example.rest.restApis.shared;
+
+import java.util.UUID;
+
+public class Utils {
+
+	public String generateUserId() {
+		return UUID.randomUUID().toString();
+	}
+}
