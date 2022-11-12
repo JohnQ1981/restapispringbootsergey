@@ -1,0 +1,5 @@
+package com.appusers.photoapp.jq.security;
+
+public class WebSecurity {
+
+}

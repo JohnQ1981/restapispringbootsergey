@@ -1,9 +1,12 @@
 package com.appusers.photoapp.jq.service;
 
+import org.springframework.security.core.userdetails.UserDetailsService;
+
 import com.appusers.photoapp.jq.shared.UserDto;
 
-public interface UsersService {
+public interface UsersService extends UserDetailsService {
 	
 	UserDto createUser(UserDto userDetails); 
+	UserDto getUserDetailsByEmail(String email);
 
 }

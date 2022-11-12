@@ -1,0 +1,5 @@
+package com.appusers.photoapp.jq.user.ui.model;
+
+public class LoginRequestModel {
+
+}
